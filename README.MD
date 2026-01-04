@@ -123,7 +123,7 @@ Após a leitura da primeira parte percebemos que precisamos modificar o script p
 
 ![Download images](./assets/download-images-pet-and-dogs.png)
 
-O próximo passo é então carregar as imagens, ao executar encontro um problema com a imagem `666.jpg`, `11702.jpg` aparentemente esta corrompida e removo ela da base de imagens manualmente via gerenciador de arquivos.
+O próximo passo é então carregar as imagens, ao executar encontro um problema com a imagem `666.jpg`, `11702.jpg` aparentemente esta corrompida e faço uma lógica para remove-las.
 
 ![cat666](./assets/cat_666_problem.png)
 
