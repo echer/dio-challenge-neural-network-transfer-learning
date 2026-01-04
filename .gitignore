@@ -8,12 +8,22 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+bin/
+etc/
+lib64
+llvm/
+share/
+tensorflow/
 build/
 develop-eggs/
 dist/
 downloads/
 eggs/
 .eggs/
+.idea/
+kagglecatsanddogs*
+PetImages/
+253_29346_142-pycharm-support-libs/
 lib/
 lib64/
 parts/
