@@ -112,3 +112,21 @@ bazel build //tensorflow/tools/pip_package:wheel --repo_env=USE_PYWRAP_RULES=1 -
 ```shell
 ./pip install ../tensorflow/bazel-bin/tensorflow/tools/pip_package/wheel_house/tensorflow-2.20.0.dev0+selfbuilt-cp312-cp312-linux_x86_64.whl
 ```
+
+### Enfim após configurar localmente o ambiente podemos começar nosso projeto
+Após a leitura da primeira parte percebemos que precisamos modificar o script para baixar a nossa base de cats and dogs, faço então a modificação no script:
+- fazemos um wget para baixar o arquivo zip: kagglecatsanddogs_5340.zip
+- após o download faço a extração do conteúdo utilizando o comando unzip
+- a pasta PetImages/Cat e PetImages/Dog é criada através da extração dos arquivos
+- após a extração apago o arquivo zip
+- faço também a modificação no script que identifica a pasta onde foi feita a extração e extrai delas as classes (deixando o array de exclusões vazio pois temos apenas as pastas corretas Cat e Dog)
+
+![Download images](./assets/download-images-pet-and-dogs.png)
+
+O próximo passo é então carregar as imagens, ao executar encontro um problema com a imagem `666.jpg`, `11702.jpg` aparentemente esta corrompida e removo ela da base de imagens manualmente via gerenciador de arquivos.
+
+![cat666](./assets/cat_666_problem.png)
+
+Faço então um try except para pegar quais imagens estão com problema e logar no console par exclui-las da pasta local.
+
+![tryexcept](./assets/get_image_except.png)
