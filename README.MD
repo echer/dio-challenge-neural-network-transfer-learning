@@ -12,11 +12,11 @@ Limitação na quantidade de imagens:
 
 ![photo limit](assets/limit_photos.png)
 
-Otimizações de memória para uso de GPU:
+Otimizações de memória para uso de GPU / Redução no tamanho das variaveis de float32 para float16:
 
 ![memory optimization](./assets/memory_optimization.png)
 
-Otimizações de memória / Redução no tamanho das variaveis de float32 para float16:
+Otimizações de memória do algoritmo / garbage collector
 
 ![memory optimization](./assets/memory_optimization_deletion.png)
 
